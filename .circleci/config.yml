@@ -10,7 +10,7 @@ jobs:
 
   job_b:
     docker:
-      - image: cimg/node:16.0
+      - image: cimg/node:16.18
     steps:
       - run: "true"
 
