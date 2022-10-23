@@ -3,14 +3,17 @@
   extends: ["config:base"],
 
   packageRules: [
+    // Node.js
     {
       matchManagers: ["nodenv"],
       groupName: "Node.js runtime",
+      allowedVersions: "< 17",
     },
     {
       matchManagers: ["circleci"],
       matchPackageNames: ["cimg/node"],
       groupName: "Node.js runtime",
+      allowedVersions: "< 17",
     },
   ],
 }
