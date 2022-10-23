@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   job_a:
     docker:
-      - image: cimg/node:14.0.0
+      - image: cimg/node:14.20.1
     working_directory: ~/repo
     steps:
       - run: "true"
