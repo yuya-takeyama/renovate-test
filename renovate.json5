@@ -8,12 +8,18 @@
       matchManagers: ["nodenv"],
       groupName: "Node.js runtime",
       allowedVersions: "< 17",
+      patch: {
+        automerge: true,
+      },
     },
     {
       matchManagers: ["circleci"],
       matchPackageNames: ["cimg/node"],
       groupName: "Node.js runtime",
       allowedVersions: "< 17",
+      patch: {
+        automerge: true,
+      },
     },
   ],
 }
